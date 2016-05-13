@@ -18,6 +18,7 @@ eslint : {
 ```bash
 gulp lint
 ```
+
 All params for launchReporters are optional, if you dont pass them, they'll skip linters. We rarely need to scan both css and scss for example.
 #Configuration
 Since not all project will match the default values, you can customize it, each reporter has params :
@@ -67,14 +68,6 @@ gulp.task('lint', function() {
 });
 ```
 
-#Sample project with jasmine/istanbul for testing
-
-SOON
-
-#Sample project with intern for testing
-
-An example project is available here : https://github.com/groupe-sii/sonar-web-frontend-helloworld
-
 # Informations for Sonarqube
 The export files for Sonarqube are JSON files providing all informations a Sonarqube issue might need :
 
@@ -107,18 +100,7 @@ The export files for Sonarqube are JSON files providing all informations a Sonar
   * reporter : Name of the reporter used to generate this issue
   * creationDate : Date of issue creation
 
-# Included Reporters
-Reporters are custom reporters written for the gulp tasks of each linter, the output is a Sonarqube compatible JSON file.
-A Reporter must be open before being passed to linter/hinter plugin, and closed after the linter/hinter plugin ended its task.
-
-* [HTMLhint](http://htmlhint.com/)
-* [JShint](http://jshint.com/)
-* [CSSlint](http://csslint.net/)
-* [SCSSLint](https://github.com/brigade/scss-lint)
-* [ESLint angular](https://github.com/Gillespie59/eslint-plugin-angular)
-* [TSLint](http://palantir.github.io/tslint/)
-
-#Roadmap
-New reporters will be added over time, with new webtechnologies incoming :
-
-* Angular2 linter
+# Developers
+Tests are in mocha + chai so:
+- Install: npm install mocha -g
+- Run: mocha tests --recursive --watch

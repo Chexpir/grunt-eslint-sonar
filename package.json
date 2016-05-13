@@ -18,7 +18,7 @@
   ],
   "author": "Alberto Lopez <alberto.lopez.garcia@gmail.com> ",
   "contributors": [
-      ""
+    ""
   ],
   "license": "ISC",
   "bugs": {
@@ -29,7 +29,9 @@
     "map-stream": "0.0.5",
     "mkdirp": "^0.5.1",
     "q": "^1.4.1",
-    "run-sequence": "^1.1.5",
-    "tslint": "^3.9.0"
+    "run-sequence": "^1.1.5"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0"
   }
 }
